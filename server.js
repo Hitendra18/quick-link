@@ -12,7 +12,7 @@ app.use(express.json());
 const connectDB = require("./config/db.js");
 connectDB();
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 // Template engine
 app.set("views", path.join(__dirname, "/views"));
