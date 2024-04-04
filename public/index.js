@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const dropZone = document.querySelector(".drop-zone");
 const fileInput = document.querySelector("#fileinput");
 const browseBtn = document.querySelector(".browseBtn");
@@ -14,7 +12,7 @@ const emailForm = document.querySelector("#email-form");
 const submitBtn = document.querySelector("#submitBtn");
 const toast = document.querySelector(".toast");
 
-const host = process.env.APP_BASE_URL;
+const host = "https://quick-link-alpha.vercel.app/";
 // const host = "http://localhost:3000/";
 const uploadURL = `${host}api/files`;
 const emailURL = `${host}api/files/send`;
