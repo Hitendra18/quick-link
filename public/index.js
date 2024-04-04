@@ -12,7 +12,8 @@ const emailForm = document.querySelector("#email-form");
 const submitBtn = document.querySelector("#submitBtn");
 const toast = document.querySelector(".toast");
 
-const host = "http://localhost:3000/";
+// const host = "http://localhost:3000/";
+const host = "https://quick-link-mauve.vercel.app/";
 const uploadURL = `${host}api/files`;
 const emailURL = `${host}api/files/send`;
 
