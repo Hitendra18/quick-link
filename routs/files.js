@@ -86,5 +86,5 @@ router.post("/send", async (req, res) => {
   });
   return res.send({ success: true });
 });
- 
+
 module.exports = router;
