@@ -21,7 +21,6 @@ const maxAllowedSize = 100 * 1024 * 1024; //MB
 
 dropZone.addEventListener("dragover", (e) => {
   e.preventDefault();
-  // console.log(" ");
 
   if (!dropZone.classList.contains("dragged")) {
     dropZone.classList.add("dragged");
