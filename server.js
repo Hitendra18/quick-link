@@ -15,7 +15,6 @@ connectDB();
 // Corse
 const corsOptions = {
   origin: process.env.ALLOW_CLIENTS.split(","),
-  // ["http://localhost:3000" , "https://fileshare-app.onrender.com"]
 };
 
 app.use(cors(corsOptions));
