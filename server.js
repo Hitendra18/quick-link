@@ -14,7 +14,7 @@ connectDB();
 
 // Corse
 const corsOptions = {
-  origin: process.env.ALLOW_CLIENTS.split(","),
+  origin: "*",
 };
 
 app.use(cors(corsOptions));
