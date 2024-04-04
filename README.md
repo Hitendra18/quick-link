@@ -1,11 +1,27 @@
-# CodeClause_File-Sharing-With-Link_QuickLink
+# Quick Link File Sharing App
 
-Welcome to the File Sharing Website project! This web application allows you to easily share files with others using a simple drag-and-drop or browse interface. You can generate shareable links or directly send files via email. This repository contains the source code and files for the website.
+## Introduction
 
-![Screenshot 2023-08-30 045237](https://github.com/Hitendra18/CodeClause_File-Sharing-With-Link_QuickLink/assets/88924097/eefcb19b-72bd-49d1-9314-5e507f15486d)
-![Screenshot 2023-08-30 045248](https://github.com/Hitendra18/CodeClause_File-Sharing-With-Link_QuickLink/assets/88924097/7e32ee2d-09d4-4f1e-8952-8c2c17939c1f)
-![Screenshot 2023-08-30 045403-2](https://github.com/Hitendra18/CodeClause_File-Sharing-With-Link_QuickLink/assets/88924097/69fd162e-679f-4b3c-b188-ab7f9b5a2951)
-![Screenshot 2023-08-30 045320](https://github.com/Hitendra18/CodeClause_File-Sharing-With-Link_QuickLink/assets/88924097/37d1fd7e-3af3-429e-b39f-3782cae31f97)
+Welcome to the File Sharing Website project! This web application allows you to easily share files with others using a simple drag-and-drop or browse interface. You can generate shareable links or directly send files via email. This repository contains the source code for the website.
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Express.js, MongoDB, mongoose, multer, nodemailer, SMTP for emails, ejs Template
+
+## How it works
+
+1. This is the home page, you can upload your file here.
+   ![Home Page](https://raw.githubusercontent.com/Hitendra18/quick-link/main/screenshots/Home.png)
+
+2. Here you can copy the generated link and share with anyone or you can simply provide emails to share the generated link.
+   ![Share](https://raw.githubusercontent.com/Hitendra18/quick-link/main/screenshots/Share.png)
+
+3. This is how the email will look like.
+   ![Email](https://raw.githubusercontent.com/Hitendra18/quick-link/main/screenshots/Email.png)
+
+4. This is the download page, clicking on the download button will start the download.
+   ![Download](https://raw.githubusercontent.com/Hitendra18/quick-link/main/screenshots/Download.png)
 
 ## Features
 
@@ -16,42 +32,20 @@ Welcome to the File Sharing Website project! This web application allows you to 
 - Responsive web design
 - Secure file storage using MongoDB
 - Built with HTML, CSS, JavaScript (Node.js), and MongoDB
-- Deployed using Render.com
 
-## Prerequisites
+## Try it by yourself
 
-- Node.js and npm installed
-- MongoDB database (can be local or hosted)
-- Other dependencies (install using `npm install`)
-
-## Installation
-
-1. Clone this repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project folder: `cd https://github.com/Hitendra18/CodeClause_File-Sharing-With-Link_QuickLink`
-3. Install dependencies: `npm install`
-
-## Configuration
-
-1. Rename `.env.example` to `.env`.
-2. Fill in the required environment variables in `.env`:
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Rename `.env.example` to `.env`.
+4. Create an account on [brevo](https://www.brevo.com/) for SMTP server.
+5. Fill in the required environment variables in `.env`:
    - `MONGODB_URI`: Your MongoDB connection URI
    - `MAILER_EMAIL`: Your email address for sending emails
    - `MAILER_PASSWORD`: SMTP service password
-   - ...other configuration variables
+   - `APP_BASE_URL`: `http://localhost:3000/`
+6. Start the server: `npm run dev`
+7. Open a web browser and visit: `http://localhost:3000`.
+8. Now you should be able to use it 😊.
 
-## Usage
-
-1. Start the server: `npm start` or `npm run dev` (if using nodemon).
-2. Open a web browser and visit: `http://localhost:3000` (or the specified port).
-3. Upload a file by dragging and dropping or browsing.
-4. Choose between generating a shareable link or sending the file via email.
-5. Follow the on-screen instructions to complete the process.
-
-## Deployment
-
-This website is deployed using Render.com. To deploy it yourself:
-
-1. Create an account on Render.com.
-2. Connect your GitHub repository to Render.
-3. Configure the necessary environment variables in the Render dashboard.
-4. Deploy your app using the provided deployment instructions.
+Thank you...
