@@ -4,6 +4,8 @@
 
 Welcome to the File Sharing Website project! This web application allows you to easily share files with others using a simple drag-and-drop or browse interface. You can generate shareable links or directly send files via email. This repository contains the source code for the website.
 
+Visit live website: [QuickLink](https://quicklink-dqxj.onrender.com/)
+
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
